@@ -133,3 +133,8 @@ footer {
     justify-content: center;
     background-color: #d1f3fd;
 }
+
+footer a {
+	color: #105781;
+	text-decoration:none;
+}
