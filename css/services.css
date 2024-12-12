@@ -91,3 +91,8 @@ h3 {
 h3:hover {
        color: #e7f8ff;
 }
+
+h3 a {
+	color: #105781;
+	text-decoration:none;
+}
