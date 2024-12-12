@@ -85,6 +85,7 @@ h3 {
     margin: 0;
     line-height: 1.5;
     background-color: #9ecddf;
+    text-decoration: none;
 }
 
 h3:hover {
