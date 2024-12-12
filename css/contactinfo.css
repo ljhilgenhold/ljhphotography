@@ -99,6 +99,40 @@ h3 {
     min-height: 250px;
 }
 
+.form-container input[type="submit"] {
+    background-color: #105781;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    align-self: center;
+}
+
+
+.form-container input[type="submit"]:hover {
+    background-color: #0a3e54;
+}
+
+.form-container input[type="reset"] {
+    background-color: #105781;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    align-self: center;
+}
+
+
+.form-container input[type="reset"]:hover {
+    background-color: #0a3e54;
+}
+
 .Contact-Me {
     font-family: "Lato", sans-serif;
     font-weight: 300;
