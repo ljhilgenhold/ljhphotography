@@ -107,21 +107,22 @@ h2 {
     background-color: #d1f3fd;
     padding: 20px;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 500px;
+    height: 800px;
 }
 
 .about-text h2 {
     font-family: "Goudy Old Style", serif;
     font-weight: 700;
     color: #105781;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
 
 .about-text p {
     font-family: "Lato", sans-serif;
     color: #48758a;
-    font-size: 20px;
+    font-size: 27px;
     text-align: center;
 }
 
