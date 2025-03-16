@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Lara Hilgenhold Photography">
+    <meta name="description" content="Webpage for Lara Hilgenhold Photography">
+    <link rel="stylesheet" href="css/ljhphotostylesnew.css">
+    <script src="scripts/ljhphotojs.js" defer></script>
+    <title>Lara Hilgenhold Photography</title>
+</head>
+<body>
+    <header>
+        <img height="300" src="images/LJHMonogramLogo.png" alt="Lara Hilgenhold Photography Monogram Logo">
+        <h1> Lara Hilgenhold Photography </h1>
+       <nav>
+            <div id="navigationpanel" class="navpanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="ljhphotoabout.html">About</a>
+                <a href="ljhphotogallery.html">Gallery</a>
+                <a href="contactinfo.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+       </nav> 
+       <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+    </header>
+
+
+<!--INQUIRY FORM-->
+
+    <div class="session-container">
+        <div class="form-container">
+    <h2>Session Inquiry</h2>
+    <div class="inquiry">
+        <p>Please fill out and submit the form below for session inquiries.</p>
+    </div>
+    <form method="post" action="">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="firstName" size="40" required />
+        <br/><br/>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="lastName" size="40" required />
+        <br/><br/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" size="40" required />
+        <br/><br/>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" size="40" />
+        <br/>
+    <br/>
+    <p>What Type Of Session Are You Looking For?</p>
+    <select name="SessionType">
+        <option> Newborn</option>
+        <option> Family Portraits</option>
+        <option>Couples/Engagements</option>
+        <option>Other</option>
+    </select>
+    <br/>
+    <br/>
+    <p>Please Enter Preferred Date Range Below.</p>
+    <p>If you are scheduling a newborn session, please enter the due date range and we will solidify a date when baby arrives.</p>
+    <input type="date" name="StartDate" size="40"/>
+    <input type="date" name="EndDate" size="40"/>
+    <p> *Note that dates and times are subject to availibility.</p>
+    <br/>
+    
+    <textarea>Comments</textarea>
+    
+    <br/>
+    <br/>
+    <br/>
+    <input type="submit"/>      
+    <input type="reset"/>  
+    </form>
+    </div>
+    </div>
+
+<!--CONTACT INFO-->
+
+    <div class="contactinfo">
+        <h4> Contact Information</h4>
+        <br/>
+        <p>Phone: 804-XXX-XXXX</p>
+        <br/>
+        <p>Email: ljhilgenholdphotography@gmail.com</p>
+        <br/>
+        <p>Feel free to text, call, or email me about your session! I try my best to get back within 1-2 business days, but please reach out again if no response was given during that time!</p>
+        <br/>
+    </div>
+
+
+<!--SOCIAL LINKS-->
+
+    <p id=followme>Follow Me!</p>
+    <br/>
+    <div class="socials">
+        <a href="https://www.instagram.com/ljhilgenhold_photography/"><img height="50" src="images/instagramlogo.png" alt="instagram logo" /></a>
+        <a href="https://www.facebook.com/ljhilgenholdphotography"><img height="50" src="images/Facebook-Logo.png" alt= "facebook logo" /></a>
+    </div>
+    <br/>
+</section>
+
+<!--FOOTER-->
+
+<footer>
+    <ul>
+        <li><a href='#top'> Back to Top</a></li>
+        <li><a href="contactinfo.html">Contact Info</a></li>
+        <li><a href="ljhphotogallery.html">Services Offered</a></li>
+    </ul>
+</footer>
+</body>

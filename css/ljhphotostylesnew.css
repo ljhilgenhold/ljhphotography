@@ -1,0 +1,658 @@
+/* CSS Document */
+/* Style sheet for LJHPhotography-new index.html */
+
+/*RESET*/
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+header {
+    background-color: #d1f3fd;
+    justify-content: center;
+    padding-bottom: 8%;
+    text-align: center;
+    width: 100%;
+    
+}
+
+h1 {
+    color: #105781;
+    font-family: "Goudy Old Style", serif;
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 70px;
+    text-align: center;
+   
+    
+}
+
+/*NAVIGTION SIDE PANEL*/
+
+.navpanel {
+    background-color: #9ecddf;
+    height:100%;
+    overflow-x: hidden;
+    padding-top: 2%;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: 0.5s;
+    width: 0;
+    z-index: 1;
+}
+
+.navpanel a {
+    color:#105781;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 65px 8px 8px 32px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navpanel a:hover {
+    color: #e7f8ff;
+  }
+
+.openbtn {
+    background-color: #d1f3fd;
+    border: none;
+    color: #105781;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: absolute; 
+    right: 15px; 
+    top: 15px;
+}
+
+.openbtn:hover {
+    background-color: #9ecddf;
+  }
+
+  /*SLIDESHOW*/
+
+  #slideshow {
+    box-sizing:border-box;
+    border:5px solid #105781;
+    margin: 5%;
+  }
+
+  .slideshow {
+    
+    margin:auto;
+    max-width: 75%;
+    position: relative;
+    padding: 10%;
+  }
+
+  .slideimages {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position:absolute;
+    width: auto;
+    margin-top: -30%;
+    padding: 16px;
+    color: #105781;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #105781;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #9ecddf;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/*MISSION STATEMENT*/
+
+h2 {
+    color: #105781;
+    font-family: "Goudy Old Style", serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+body {
+    color: #48758a;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+
+.missionstatement {
+    background-color: #d1f3fd;
+    border-radius: 30px;
+    padding: 10%;
+    margin:5%;
+    text-align: center;
+}
+
+/*SERVICES BUTTON*/
+
+h3 {
+  color: #105781;
+  background-color: #9ecddf;
+  border-radius: 10px;
+  font-family: "Goudy Old Style", serif;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 5%;
+  text-align: center;
+}
+
+h3 a {
+  color: #105781;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  color: #e7f8ff;
+}
+
+/*TESTIMONIALS*/
+
+.testimonials {
+    background-color: #d1f3fd;
+    border-radius: 30px;
+    padding: 10%;
+    margin:5%;
+    text-align: center;
+}
+
+/*ABOUT*/
+#about {
+background-color: #d1f3fd;
+border-radius: 30px;
+justify-content: center;
+padding: 10%;
+margin:5%;
+text-align: center;
+}
+
+.aboutimg {
+  justify-content: center;
+}
+
+/*GALLERY&SERVICES*/
+
+#servicesheader {
+  line-height: 70px;
+}
+
+.services {
+    background-color: #d1f3fd;
+    border-radius: 30px;
+    padding: 10%;
+    margin:5%;
+    text-align: center;
+    }
+
+.services h2 a {
+  color: #105781;
+  text-decoration: none;
+}
+
+.services h2 a:hover {
+  color: #9ecddf;
+}
+
+/*GALLERY*/
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* one image per row */
+  gap: 30px;
+  margin: 5%; 
+  padding: 5%; 
+  max-width: 80%; 
+}
+
+/* Individual gallery items */
+.gallery {
+  align-items: center;
+  background-color: #d1f3fd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.gallery img {
+  border-radius: 5px;
+  height: auto;
+  max-width: 80%;
+  padding: 10%;
+  width: 100%;
+}
+
+.gallery:hover {
+  background-color: #b0e4f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/*CONTACT PAGE*/
+
+.session-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+}
+
+.form-container {
+  background-color: #d1f3fd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  padding: 40px;
+  width: 100%;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container textarea {
+  border: 1px solid #9ecddf;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-container input[type="submit"] {
+  align-self: center;
+  background-color: #105781;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 10px 20px;
+}
+
+
+.form-container input[type="submit"]:hover {
+  background-color: #0a3e54;
+}
+
+.form-container input[type="reset"] {
+  align-self: center;
+  background-color: #105781;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 10px 20px;
+}
+
+
+.form-container input[type="reset"]:hover {
+  background-color: #0a3e54;
+}
+
+.inquiry {
+  color: #48758a;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contactinfo {
+  margin: 5%;
+  margin-left: 15%;
+  margin-right: 15%
+}
+
+h4 {
+  font-family: "Goudy Old Style", serif;
+  font-size: 40px;
+}
+
+#faqnavheader {
+  font-family: "Goudy Old Style", serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.faqnav {
+  text-align: center;
+  padding: 5%;
+}
+
+.faqnav ul {
+  list-style-type: none;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.faqnav ul a {
+  color:#0a3e54;
+  text-decoration: none;
+}
+
+.faqheader {
+  background-color: #9ecddf;
+  border-radius: 30px;
+  padding: 10%;
+  margin:5%;
+  text-align: center;
+}
+
+.faq {
+  background-color: #d1f3fd;
+  border-radius: 30px;
+  padding: 10%;
+  margin:5%;
+  text-align: center;
+  }
+
+h5 {
+  font-family: "Goudy Old Style", serif;
+  font-size: 30px;
+}
+
+
+/*SOCIAL LINKS*/
+
+#followme {
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*FOOTER*/
+
+footer {
+    align-items: center;
+    background-color: #9ecddf;
+    display: flex;
+    font-size: 20px;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    font-size: 17px;
+    gap: 50px;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer ul li a {
+    color: #105781;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #e7f8ff;
+}
+
+/*MEDIA QUERIES*/
+
+/*TABLET VIEW*/
+@media screen and (min-width: 800px) {
+
+    h1 {
+      color: #105781;
+      font-family: "Goudy Old Style", serif;
+      font-size: 75px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 70px;
+      text-align: center;  
+  }
+
+    .navpanel {
+      background-color: #9ecddf;
+      height:55%;
+      overflow-x: hidden;
+      padding-top: 2%;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      transition: 0.5s;
+      width: 0;
+      z-index: 1;
+  }
+
+    .navpanel a {
+      color:#105781;
+      display: block;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 20px 8px 8px 32px;
+      text-decoration: none;
+      transition: 0.3s;
+  }
+/*GALLERY*/
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two images per row */
+    gap: 30px;
+    margin: 5%; 
+    padding: 5%; 
+    max-width: 80%; 
+  }
+
+}
+
+/*DESKTOP VIEW*/
+@media screen and (min-width: 1000px) {
+
+/*SLIDESHOW*/
+    #slideshow {
+      box-sizing:border-box;
+      border:5px solid #105781;
+      margin-left: 13%;
+      margin-right: 13%;
+    }
+
+    .slideshow {
+      
+      margin:auto;
+      max-width: 55%;
+      position: relative;
+      padding: 5%;
+    }
+
+    .slideimages {
+      display: none;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position:absolute;
+      width: auto;
+      margin-top: -30%;
+      padding: 16px;
+      color: #105781;
+      font-weight: bold;
+      font-size: 25px;
+      transition: 0.6s ease;
+      user-select: none;
+    }
+
+    .prev {
+      left: 0;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #105781;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #9ecddf;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+/*SECTIONS*/
+    section {
+      margin-left: 10%;
+      margin-right: 10%;
+    } 
+    
+    #about{
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    #about p {
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    .aboutimg {
+      min-width: 100%;
+    }
+
+/*SERVICES & GALLERY NAV*/
+
+
+.services {
+  background-color: #d1f3fd;
+  border-radius: 30px;
+  padding: 10%;
+  margin:15%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-align: center;
+  }
+
+/*GALLERY*/
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* three images per row */
+  gap: 30px;
+  margin: 5%; 
+  padding: 5%; 
+  max-width: 80%; 
+}
+
+/*FAQ*/
+
+h5 {
+  font-family: "Goudy Old Style", serif;
+  font-size: 50px;
+}
+
+.faqheader {
+  background-color: #9ecddf;
+  border-radius: 30px;
+  padding: 10%;
+  margin:15%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.faq {
+  background-color: #d1f3fd;
+  border-radius: 30px;
+  padding: 10%;
+  margin: 15%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-align: center;
+  }
+
+/*FOOTER*/
+footer {
+  align-items: center;
+  background-color: #9ecddf;
+  display: flex;
+  font-size: 20px;
+  height: 60px;
+  justify-content: center;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  font-size: 25px;
+  gap: 250px;
+  list-style-type: none;
+  text-align: center;
+}
+
+}
