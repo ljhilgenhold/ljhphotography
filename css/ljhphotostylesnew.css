@@ -30,7 +30,7 @@ h1 {
     
 }
 
-/*NAVIGTION SIDE PANEL*/
+/*NAVIGTION SIDE PANEL FOR MOBILE*/
 
 .navpanel {
     background-color: #9ecddf;
@@ -75,6 +75,40 @@ h1 {
 .openbtn:hover {
     background-color: #9ecddf;
   }
+
+  /*NAV BAR FOR DESKTOP*/
+  .dtnav {
+      width: 100%;
+      height: 50px;
+      background-color: #9ecddf;
+      padding: 5px 0 15px;
+      display: flex;
+      justify-content: center;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 150px;
+      padding: 0;
+      margin: 0;
+      line-height: 60px;
+  }
+  
+  nav ul li {
+      font-size: 30px;
+      font-family: "Goudy Old Style", serif;
+  }
+  
+  nav ul li a {
+      color: #105781;
+      text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+      color: #e7f8ff;
+  }
+  
 
   /*SLIDESHOW*/
 
@@ -453,7 +487,7 @@ footer ul li a:hover {
 
 /* MOBILE VIEW*/
 
-@media screen and (min-width: 500px)  {
+@media screen and (max-width: 799px)  {
 
   h1 {
     color: #105781;
@@ -481,7 +515,7 @@ footer ul li a:hover {
   .navpanel a {
     color:#105781;
     display: block;
-    font-size: 50%;
+    font-size: 75px;
     font-weight: bold;
     padding: 20px 8px 8px 32px;
     text-decoration: none;
@@ -499,6 +533,26 @@ footer ul li a:hover {
     position: absolute; 
     right: 15px; 
     top: 15px;
+}
+
+.dtnav {
+  display: none;
+}
+
+nav ul {
+display: none
+}
+
+nav ul li {
+  display: none;
+}
+
+nav ul li a {
+  display: none;
+}
+
+nav ul li a:hover {
+  display: none;
 }
 
 
@@ -534,7 +588,7 @@ footer ul {
 
 
 /*TABLET VIEW*/
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 1160px) {
 
     h1 {
       color: #105781;
@@ -568,6 +622,28 @@ footer ul {
       text-decoration: none;
       transition: 0.3s;
   }
+
+  .dtnav {
+    display: none;
+  }
+  
+  nav ul {
+  display: none
+  }
+  
+  nav ul li {
+    display: none;
+  }
+  
+  nav ul li a {
+    display: none;
+  }
+  
+  nav ul li a:hover {
+    display: none;
+  }
+  
+
 /*GALLERY*/
   .gallery-container {
     display: grid;
@@ -581,7 +657,7 @@ footer ul {
 }
 
 /*DESKTOP VIEW*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1161px) {
 
   .navpanel {
    display: none;
