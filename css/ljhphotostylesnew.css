@@ -515,7 +515,7 @@ footer ul li a:hover {
   .navpanel a {
     color:#105781;
     display: block;
-    font-size: 75px;
+    font-size: 35%;
     font-weight: bold;
     padding: 20px 8px 8px 32px;
     text-decoration: none;
@@ -527,7 +527,7 @@ footer ul li a:hover {
     border: none;
     color: #105781;
     cursor: pointer;
-    font-size: 80px;
+    font-size: 30%;
     font-weight: bold;
     padding: 10px 15px;
     position: absolute; 
@@ -560,7 +560,7 @@ nav ul li a:hover {
     align-items: center;
     background-color: #9ecddf;
     display: flex;
-    font-size: 40px;
+    font-size: 30%;
     height: 80px;
     justify-content: center;
     text-align: center;
@@ -568,7 +568,7 @@ nav ul li a:hover {
 
 footer ul {
     display: flex;
-    font-size: 17px;
+    font-size: 30%;
     gap: 50px;
     list-style-type: none;
     text-align: center;
