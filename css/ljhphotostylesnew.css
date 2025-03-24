@@ -451,9 +451,9 @@ footer ul li a:hover {
 /*MEDIA QUERIES*/
 
 
-/*MOBILE VIEW*/
+/* MOBILE VIEW*/
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 300px)  {
 
   h1 {
     color: #105781;
@@ -474,7 +474,7 @@ footer ul li a:hover {
     right: 15px;
     top: 15px;
     transition: 0.5s;
-    width: 100%;
+    width: 0;
     z-index: 1;
 }
 
@@ -541,7 +541,7 @@ footer ul {
       right: 15px;
       top: 15px;
       transition: 0.5s;
-      width: 50%;
+      width: 0;
       z-index: 1;
   }
 

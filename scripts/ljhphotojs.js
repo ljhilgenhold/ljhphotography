@@ -1,6 +1,6 @@
         //Nav JavaScript
             function openNav() {
-                document.getElementById("navigationpanel").style.width = "250px";
+                document.getElementById("navigationpanel").style.width = "30%";
             }
             function closeNav() {
             document.getElementById("navigationpanel").style.width = "0";
