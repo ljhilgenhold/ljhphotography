@@ -481,7 +481,7 @@ footer ul li a:hover {
   .navpanel a {
     color:#105781;
     display: block;
-    font-size: 50px;
+    font-size: 50%;
     font-weight: bold;
     padding: 20px 8px 8px 32px;
     text-decoration: none;
