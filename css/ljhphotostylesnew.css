@@ -451,6 +451,7 @@ h5 {
 .socials {
     display: flex;
     justify-content: space-evenly;
+    height: 50px;
 }
 
 /*FOOTER*/
@@ -568,7 +569,7 @@ nav ul li a:hover {
 
 footer ul {
     display: flex;
-    font-size: 30%;
+    font-size: 500%;
     gap: 50px;
     list-style-type: none;
     text-align: center;
