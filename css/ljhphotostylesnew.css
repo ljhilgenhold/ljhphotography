@@ -481,7 +481,7 @@ footer ul li a:hover {
   .navpanel a {
     color:#105781;
     display: block;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bold;
     padding: 20px 8px 8px 32px;
     text-decoration: none;
@@ -582,6 +582,26 @@ footer ul {
 
 /*DESKTOP VIEW*/
 @media screen and (min-width: 1000px) {
+
+  .navpanel {
+   display: none;
+}
+
+.navpanel a {
+   display: none;
+}
+
+.navpanel a:hover {
+    display: none;
+  }
+
+.openbtn {
+   display: none
+}
+
+.openbtn:hover {
+    display: none;
+  }
 
 /*SLIDESHOW*/
     #slideshow {
