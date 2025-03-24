@@ -488,6 +488,20 @@ footer ul li a:hover {
     transition: 0.3s;
   }
 
+  .openbtn {
+    background-color: #d1f3fd;
+    border: none;
+    color: #105781;
+    cursor: pointer;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: absolute; 
+    right: 15px; 
+    top: 15px;
+}
+
+
   footer {
     align-items: center;
     background-color: #9ecddf;
