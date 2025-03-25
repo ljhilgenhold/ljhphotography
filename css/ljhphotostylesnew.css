@@ -516,7 +516,7 @@ footer ul li a:hover {
   .navpanel a {
     color:#105781;
     display: block;
-    font-size: 35%;
+    font-size: 40px;
     font-weight: bold;
     padding: 20px 8px 8px 32px;
     text-decoration: none;
@@ -528,7 +528,7 @@ footer ul li a:hover {
     border: none;
     color: #105781;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 90px;
     font-weight: bold;
     padding: 10px 15px;
     position: absolute; 
@@ -569,7 +569,7 @@ nav ul li a:hover {
 
 footer ul {
     display: flex;
-    font-size: 20px;
+    font-size: 30px;
     gap: 50px;
     list-style-type: none;
     text-align: center;
@@ -617,12 +617,25 @@ footer ul {
     .navpanel a {
       color:#105781;
       display: block;
-      font-size: 25px;
+      font-size: 45px;
       font-weight: bold;
       padding: 20px 8px 8px 32px;
       text-decoration: none;
       transition: 0.3s;
   }
+
+  .openbtn {
+    background-color: #d1f3fd;
+    border: none;
+    color: #105781;
+    cursor: pointer;
+    font-size: 100px;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: absolute; 
+    right: 15px; 
+    top: 15px;
+}
 
   .dtnav {
     display: none;
