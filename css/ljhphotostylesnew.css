@@ -561,7 +561,7 @@ nav ul li a:hover {
     align-items: center;
     background-color: #9ecddf;
     display: flex;
-    font-size: 30%;
+    font-size: 18px;
     height: 80px;
     justify-content: center;
     text-align: center;
@@ -569,7 +569,7 @@ nav ul li a:hover {
 
 footer ul {
     display: flex;
-    font-size: 500%;
+    font-size: 20px;
     gap: 50px;
     list-style-type: none;
     text-align: center;
