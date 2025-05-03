@@ -277,10 +277,9 @@ text-align: center;
     }
 
 a {
-  color: #0a3e54;
+  color: #105781;
   text-decoration: none;
   background-color: transparent;
-  opacity: .75;
   transition: .5s;
 }
 
@@ -295,10 +294,11 @@ a:hover {
   
 }
 
-/*GALLERY*/
-.gallery-container {
+/* GALLERY */
+ .gallery-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* one image per row */
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: masonry;
   gap: 30px;
   margin: 5%; 
   padding: 5%; 
@@ -306,7 +306,7 @@ a:hover {
 }
 
 /* Individual gallery items */
-.gallery {
+ .gallery {
   align-items: center;
   background-color: #d1f3fd;
   border-radius: 10px;
@@ -321,7 +321,8 @@ a:hover {
   max-width: 80%;
   padding: 10%;
   width: 100%;
-}
+}  
+
 
 .gallery:hover {
   background-color: #b0e4f5;
