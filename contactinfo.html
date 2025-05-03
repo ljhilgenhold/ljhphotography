@@ -46,35 +46,34 @@
     <div class="inquiry">
         <p>Please fill out and submit the form below for session inquiries.</p>
     </div>
-    <form method="post" action="">
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="firstName" size="40" required />
-        <br/><br/>
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="lastName" size="40" required />
-        <br/><br/>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" size="40" required />
-        <br/><br/>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" size="40" />
-        <br/>
-    <br/>
-    <p>What Type Of Session Are You Looking For?</p>
-    <select name="SessionType">
-        <option> Newborn</option>
-        <option> Family Portraits</option>
-        <option>Couples/Engagements</option>
-        <option>Other</option>
-    </select>
-    <br/>
-    <br/>
-    <p>Please Enter Preferred Date Range Below.</p>
-    <p>If you are scheduling a newborn session, please enter the due date range and we will solidify a date when baby arrives.</p>
-    <input type="date" name="StartDate" size="40"/>
-    <input type="date" name="EndDate" size="40"/>
-    <p> *Note that dates and times are subject to availibility.</p>
-    <br/>
+        <form action="https://formsubmit.co/ljhilgenholdphotography@gmail.com" method="POST">
+            <label for="first-name">First Name:</label>
+            <input required type="text" placeholder="First Name" id="first-name" name="First&nbsp;Name" size="40" required />
+            <br/><br/>
+            <label for="last-name">Last Name:</label>
+            <input required type="text" placeholder="Last Name" id="last-name" name="Last&nbsp;Name" size="40" required />
+            <br/><br/>
+            <label for="email">Email:</label>
+            <input required type="email" placeholder="Email Address" pattern="^.+@.+$" id="Email" name="Email" size="40" required />
+            <br/><br/>
+            <label for="phone">Phone Number:</label>
+            <input required type="tel" placeholder="Phone Number" id="phone" name="Phone" size="40" />
+            <br/>
+            <br/>
+            <p>What Type Of Session Are You Looking For?</p>
+            <select required name="Session&nbsp;Type">
+                <option> Newborn</option>
+                <option> Family Portraits</option>
+                <option>Couples/Engagements</option>
+                <option>Other</option>
+            </select>
+            <br/>
+            <br/>
+            <p>If you are scheduling a newborn session, please enter the due date range and we will solidify a date when baby arrives. Skip this if you are inquiring about other session types.</p>
+            <input required type="date" name="Start&nbsp;Date" size="40"/>
+            <input required type="date" name="End&nbsp;Date" size="40"/>
+            <p> *Note that dates and times are subject to availibility.</p>
+            <br/>
     
     <textarea>Comments</textarea>
     
