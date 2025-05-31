@@ -295,39 +295,37 @@ a:hover {
 }
 
 /* GALLERY */
- .gallery-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: masonry;
-  gap: 30px;
-  margin: 5%; 
-  padding: 5%; 
-  max-width: 80%; 
+
+.back {
+margin: 5%;
+font-size: 30px;
 }
+
+
+ .gallery-row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 5%; 
+  background-color: #b0e4f5;
+  padding: 20px;
+  border-radius: 10px;
+  }
 
 /* Individual gallery items */
- .gallery {
-  align-items: center;
-  background-color: #d1f3fd;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  padding: 2%;
+ .gallery-column {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+
 }
 
-.gallery img {
-  border-radius: 5px;
-  height: auto;
-  max-width: 80%;
-  padding: 10%;
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
   width: 100%;
+  border-radius: 5px;
+ 
 }  
-
-
-.gallery:hover {
-  background-color: #b0e4f5;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 
 /*CONTACT PAGE*/
@@ -599,20 +597,26 @@ footer ul {
 }
 
 /*GALLERY*/
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* two images per row */
-  gap: 30px;
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
   margin: 5%; 
-  padding: 5%; 
-  max-width: 80%; 
+  background-color: #b0e4f5;
+  padding: 20px;
+  border-radius: 10px;
+  }
+
+.gallery-column {
+  flex:100%;
+  max-width: 100%;
 }
 
 }
 
 
 /*TABLET VIEW*/
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1160px) and (min-width:1081px) {
 
     h1 {
       color: #105781;
@@ -682,14 +686,19 @@ footer ul {
   
 
 /*GALLERY*/
-  .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* two images per row */
-    gap: 30px;
-    margin: 5%; 
-    padding: 5%; 
-    max-width: 80%; 
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%; 
+  background-color: #b0e4f5;
+  padding: 20px;
+  border-radius: 10px;
   }
+
+  .gallery-column {
+    flex: 45%;
+    max-width: 50%;
+  } 
 
 }
 
@@ -816,13 +825,10 @@ footer ul {
   }
 
 /*GALLERY*/
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* three images per row */
-  gap: 30px;
-  margin: 5%; 
-  padding: 5%; 
-  max-width: 80%; 
+.gallery-column {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
 }
 
 /*FAQ*/
