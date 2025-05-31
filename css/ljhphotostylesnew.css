@@ -360,7 +360,8 @@ font-size: 30px;
   padding:40px;
   margin: 5%;
   margin-left: 15%;
-  margin-right: 15%
+  margin-right: 15%;
+  max-width: 70%;
 }
 
 h4 {
@@ -578,7 +579,16 @@ footer ul {
   align-items: center;
   height:fit-content;
 }
-
+.contactinfo {
+  background-color: #d1f3fd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding:50px;
+  margin: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 90%;
+}
 
 }
 
