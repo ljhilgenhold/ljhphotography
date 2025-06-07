@@ -237,6 +237,11 @@ h3 a:hover {
     text-align: center;
 }
 
+.stars {
+  color: rgb(245, 208, 3);
+  font-size: 24px;
+}
+
 /*ABOUT*/
 #about {
 background-color: #d1f3fd;
