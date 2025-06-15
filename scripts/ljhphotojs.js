@@ -9,10 +9,10 @@
             let slideIndex = 1;
             showSlides(slideIndex);
 
-            // Next/previous controls
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
+            // // Next/previous controls
+            // function plusSlides(n) {
+            // showSlides(slideIndex += n);
+            // }
 
             // Thumbnail image controls
             function currentSlide(n) {
@@ -46,6 +46,7 @@
                  //Gallery Cover Hover
         const galleryLinkNewborn = document.querySelector('.newborn');
         const galleryLinkCouples = document.querySelector('.couples');
+        const galleryLinkSolo = document.querySelector('.solo');
         const galleryLinkFamily = document.querySelector('.family');
 
     //Mouse enter & mouse out events
@@ -71,6 +72,18 @@
         galleryLinkCouples.addEventListener('mouseout', function(event){
    
             galleryLinkCouples.innerHTML = "Couples & Engagements";
+        
+        });
+
+          galleryLinkSolo.addEventListener('mouseenter', function(event){
+   
+            galleryLinkSolo.innerHTML = "View Gallery";
+        
+        });
+
+        galleryLinkSolo.addEventListener('mouseout', function(event){
+   
+            galleryLinkSolo.innerHTML = "Solo Portraits";
         
         });
 
