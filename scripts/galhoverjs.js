@@ -10,6 +10,7 @@
          //Gallery Cover Hover
          const galleryLinkNewborn = document.querySelector('.newborn');
          const galleryLinkCouples = document.querySelector('.couples');
+         const galleryLinkSolo = document.querySelector('.solo');
          const galleryLinkFamily = document.querySelector('.family');
  
      //Mouse enter & mouse out events
@@ -37,6 +38,18 @@
              galleryLinkCouples.innerHTML = "Couples & Engagements";
          
          });
+
+         galleryLinkSolo.addEventListener('mouseenter', function(event){
+   
+            galleryLinkSolo.innerHTML = "View Gallery";
+        
+        });
+
+        galleryLinkSolo.addEventListener('mouseout', function(event){
+   
+            galleryLinkSolo.innerHTML = "Solo Portraits";
+        
+        });
  
          galleryLinkFamily.addEventListener('mouseenter', function(event){
     

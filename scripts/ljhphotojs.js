@@ -50,6 +50,8 @@
 
 
                  //Gallery Cover Hover
+document.addEventListener("DOMContentLoaded", function () {
+
         const galleryLinkNewborn = document.querySelector('.newborn');
         const galleryLinkCouples = document.querySelector('.couples');
         const galleryLinkSolo = document.querySelector('.solo');
@@ -104,5 +106,5 @@
             galleryLinkFamily.innerHTML = "Family Portraits";
         
         });
-
+});
         
