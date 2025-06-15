@@ -270,37 +270,58 @@ text-align: center;
   justify-content: center;
     }
 
-    .gallery-cover {
-      flex-basis: 25%;
-      margin: 5%;
-      background-color: #d1f3fd;
-      text-align: center;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: 1.5s;
-    }
-
-
-a {
-  color: #105781;
-  text-decoration: none;
-  background-color: transparent;
-  transition: .5s;
+  .gallery-cover {
+    position: relative;
+    height: 250px;
+    margin: 20px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-a:hover {
-  color: #e7f8ff;
-  opacity: 1;
+/* Background images for each section */
+.gallery-cover.newborn {
+    background-image: url('../images/newborn\ sessions/BabyRiver4.jpg');
+    background-position: center 33%;
 }
 
-.gallery-cover:hover {
-  background-color: #9ecddf;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  
+.gallery-cover.couples {
+    background-image: url('../images/Couples\ Sessions/C&M-5.jpg');
+    background-position: center 10%;
 }
+
+.gallery-cover.solo {
+    background-image: url('../images/solo\ sessions/FB-web-9.jpg');
+    background-position: center;
+}
+
+.gallery-cover.family {
+    background-image: url('../images/ComingSoon.jpg');
+    background-position: center 43%;
+}
+
+/* Optional: style links inside headings */
+.gallery-cover h2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional overlay */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-cover h2 a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
 
 /* GALLERY */
 
@@ -435,48 +456,84 @@ h4 {
   font-size: 40px;
 }
 
-#faqnavheader {
-  font-family: "Goudy Old Style", serif;
-  font-size: 35px;
-  font-weight: bold;
-}
 
-.faqnav {
-  text-align: center;
-  padding: 5%;
-}
+/*FAQ*/
 
-.faqnav ul {
-  list-style-type: none;
-  font-size: 25px;
-  line-height: 40px;
-}
-
-.faqnav ul a {
-  color:#0a3e54;
-  text-decoration: none;
-}
-
-.faqheader {
-  background-color: #9ecddf;
-  border-radius: 30px;
-  padding: 10%;
-  margin:5%;
-  text-align: center;
+.faq-topic {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: .5rem;
 }
 
 .faq {
   background-color: #d1f3fd;
   border-radius: 30px;
   padding: 10%;
-  margin:5%;
+  margin: 15%;
+  margin-bottom: 5%;
+  margin-top: 5%;
   text-align: center;
   }
 
-h5 {
+.faqtitles {
   font-family: "Goudy Old Style", serif;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #105781;
 }
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #105781;
+  
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: "Goudy Old Style", serif;
+  color: #105781;
+  padding: 0.75rem;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+}
+
+.faq-answer {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+.faq-answer a {
+  color:#105781;
+  font-weight: bold;
+  text-decoration: none
+}
+
+.faq-answer a:hover {
+  color:#d1f3fd;
+  font-weight: bold;
+}
+
+.faq-item.active {
+   border-radius: 10px;
+    color: #105781;
+}
+
+.faq-item.active .faq-answer {
+  /* REMOVE: max-height */
+  /* Only padding if you want spacing when shown */
+  padding: 0.5rem 0;
+ 
+}
+
 
 
 /*SOCIAL LINKS*/
@@ -875,6 +932,31 @@ footer ul {
   max-width: 33.33%;
   padding: 0 4px;
 }
+
+.gallery-cover.newborn {
+    background-image: url('../images/newborn\ sessions/BabyRiver4.jpg');
+    background-size: 20%;
+    background-position: center 33%;
+}
+
+.gallery-cover.couples {
+    background-image: url('../images/Couples\ Sessions/C&M-5.jpg');
+    background-size: contain;
+    background-position: center 10%;
+}
+
+.gallery-cover.solo {
+    background-image: url('../images/solo\ sessions/FB-web-9.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+.gallery-cover.family {
+    background-image: url('../images/ComingSoon.jpg');
+    background-size: cover;
+    background-position: center 43%;
+}
+
 
 /*FAQ*/
 

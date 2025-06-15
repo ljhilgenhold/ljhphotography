@@ -8,10 +8,10 @@
     
          
          //Gallery Cover Hover
-         const galleryLinkNewborn = document.querySelector('.newborn');
-         const galleryLinkCouples = document.querySelector('.couples');
-         const galleryLinkSolo = document.querySelector('.solo');
-         const galleryLinkFamily = document.querySelector('.family');
+         const galleryLinkNewborn = document.querySelector('.newborn a');
+         const galleryLinkCouples = document.querySelector('.couples a');
+         const galleryLinkSolo = document.querySelector('.solo a');
+         const galleryLinkFamily = document.querySelector('.family a');
  
      //Mouse enter & mouse out events
  
