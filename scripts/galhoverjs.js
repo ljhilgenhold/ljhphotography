@@ -10,6 +10,7 @@
          //Gallery Cover Hover
          const galleryLinkNewborn = document.querySelector('.newborn a');
          const galleryLinkCouples = document.querySelector('.couples a');
+         const galleryLinkWeddings = document.querySelector('.weddings a');
          const galleryLinkSolo = document.querySelector('.solo a');
          const galleryLinkFamily = document.querySelector('.family a');
  
@@ -35,7 +36,19 @@
  
          galleryLinkCouples.addEventListener('mouseout', function(event){
     
-             galleryLinkCouples.innerHTML = "Couples & Engagements";
+             galleryLinkCouples.innerHTML = "Couples";
+         
+         });
+
+         galleryLinkWeddings.addEventListener('mouseenter', function(event){
+    
+             galleryLinkWeddings.innerHTML = "View Gallery";
+         
+         });
+ 
+         galleryLinkWeddings.addEventListener('mouseout', function(event){
+    
+             galleryLinkWeddings.innerHTML = "Weddings & Engagements";
          
          });
 

@@ -8,6 +8,17 @@
     padding: 0;
 }
 
+/*Link text appearance in body*/
+a {
+  text-decoration: none;
+  color:#48758a;
+}
+
+a:hover{
+  color:#105781;
+  font-weight: bold;
+}
+
 /*HEADER*/
 header {
     background-color: #d1f3fd;
@@ -255,6 +266,7 @@ text-align: center;
 
 .aboutimg {
   justify-content: center;
+  display: flex;
 }
 
 /*PORFOLIO NAV*/
@@ -296,8 +308,14 @@ text-align: center;
     background-position: center 10%;
 }
 
+.gallery-cover.weddings {
+    background-image: url('../images/Couples\ Sessions/weddings/KJwedding-6.jpg');
+    background-size: contain;
+    background-position: center 10%;
+}
+
 .gallery-cover.solo {
-    background-image: url('../images/solo\ sessions/FB-web-9.jpg');
+    background-image: url('../images/solo\ sessions/FB-web-3.jpg');
     background-position: center;
 }
 
@@ -945,8 +963,14 @@ footer ul {
     background-position: center 10%;
 }
 
+.gallery-cover.weddings {
+    background-image: url('../images/Couples\ Sessions/weddings/KJwedding-6.jpg');
+    background-size: contain;
+    background-position: center 10%;
+}
+
 .gallery-cover.solo {
-    background-image: url('../images/solo\ sessions/FB-web-9.jpg');
+    background-image: url('../images/solo\ sessions/FB-web-3.jpg');
     background-size: contain;
     background-position: center;
 }
