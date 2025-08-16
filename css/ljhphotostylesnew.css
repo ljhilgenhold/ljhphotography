@@ -45,7 +45,7 @@ h1 {
 
 .navpanel {
     background-color: #9ecddf;
-    height:100%;
+    height:100vh;
     overflow-x: hidden;
     padding-top: 2%;
     position: absolute;
@@ -61,7 +61,7 @@ h1 {
     display: block;
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 25%;
+    margin-bottom: 5%;
     padding: 65px 8px 8px 32px;
     text-decoration: none;
     transition: 0.3s;
@@ -452,7 +452,7 @@ flex-wrap: wrap;
 }
 
 /*ABOUT SECTION FACTS*/
-.facts-section {
+/* .facts-section {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -514,7 +514,7 @@ p {
   width: 1px;
   background-color: #105781;
   opacity: 0.3;
-}
+} */
 
 
 
@@ -1082,7 +1082,7 @@ footer ul li a:hover {
 
   .navpanel {
     background-color: #9ecddf;
-    height:100%;
+    height:100vh;
     overflow-x: hidden;
     padding-top: 2%;
     position: absolute;
@@ -1096,7 +1096,7 @@ footer ul li a:hover {
   .navpanel a {
     color:#105781;
     display: block;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: bold;
     padding: 20px 8px 8px 32px;
     text-decoration: none;
@@ -1440,52 +1440,11 @@ footer ul {
   max-width: 90%;
 }
 
-/*ABOUT FACTS SECTION*/
-.facts-section {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .text-column {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .left-text, .right-text {
-    flex: unset;
-    width: 100%;
-    text-align: center;
-  }
-
-  .factdivider {
-    display: none;
-  }
-
-  .image-column {
-    width: 100%;
-    padding: 1rem 0;
-  }
-
-  .image-column img {
-    max-width: 90%;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .fact-answer {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 0.95rem;
-  }
-
+/*find out why this part overtakes the other media queries. this is why it doesnt do right on desktop*/
 }
 
-
 /*TABLET VIEW*/
-@media screen and (max-width: 1160px) and (min-width:768px) {
+@media screen and (max-width: 1279px) and (min-width:768px) {
 
     h1 {
       color: #105781;
@@ -1499,7 +1458,7 @@ footer ul {
 
     .navpanel {
       background-color: #9ecddf;
-      height:100%;
+      height:100vh;
       overflow-x: hidden;
       padding-top: 2%;
       position: absolute;
@@ -1513,9 +1472,9 @@ footer ul {
     .navpanel a {
       color:#105781;
       display: block;
-      font-size: 45px;
+      font-size: 2rem;
       font-weight: bold;
-      padding: 20px 8px 8px 32px;
+      padding: 5px 8px 8px 32px;
       text-decoration: none;
       transition: 0.3s;
   }
@@ -1552,21 +1511,7 @@ footer ul {
   nav ul li a:hover {
     display: none;
   }
-  
-   /* Text overlay */
-    /* .overlay-text p {
-      position: absolute;
-      bottom: 50px; /* or adjust as needed */
-      /* left: 30%;
-      transform: translateX(-50%);
-      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-      /* color: white;
-      padding: 20px 40px;
-      font-size: 3rem;
-      font-family: "Goudy Old Style", serif;
-      text-align: center;
-      border-radius: 8px;
-    } */
+
 
     .midpagebanner ul {
   text-decoration: none;
@@ -1595,12 +1540,12 @@ footer ul {
     max-width: 50%;
   } 
 
-}
+
 
 /*Testimonials*/
   .reviewer-name {
   font-family: "Goudy Old Style", serif;
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -1621,7 +1566,12 @@ footer ul {
   font-style: italic;
   line-height: 1.6;
   color: #105781;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.stars {
+  color: rgb(245, 208, 3);
+  font-size: 2.5rem;
 }
 
   footer {
@@ -1786,7 +1736,7 @@ flex-wrap: wrap;
   color: #105781;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.9rem;
+  font-size: 2rem;
   transition: all 0.3s ease;
 }
 
@@ -1857,31 +1807,12 @@ footer ul {
     text-align: center;
 }
 
-/*GALLERY*/
-
-.gallery-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5%; 
-  background-color: #b0e4f5;
-  padding: 20px;
-  border-radius: 10px;
-  }
-
-.gallery-column {
-  flex:100%;
-  max-width: 100%;
-}
-
-.portfolio-grid {
-    grid-template-columns: 1fr;
-  }
 
   /*PORFOLIO NAV*/
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   gap: 2rem;
   padding: 2rem;
 }
@@ -1968,7 +1899,7 @@ footer ul {
   max-width: 90%;
 }
 
-/*ABOUT FACTS SECTION*/
+/*ABOUT FACTS SECTION MOBILE*/
 .facts-section {
     flex-direction: column;
     align-items: center;
@@ -1996,7 +1927,7 @@ footer ul {
   }
 
   .image-column img {
-    max-width: 90%;
+    max-width: 25%;
     margin: 0 auto;
     display: block;
   }
@@ -2008,6 +1939,7 @@ footer ul {
   p {
     font-size: 0.95rem;
   }
+
 
   /*About Me PAGE*/
 .gtkm-section {
@@ -2054,18 +1986,18 @@ footer ul {
 }
 
 .gtkm-p {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
 }
 
 .gtkm-content h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 3rem;
 }
 
 .gtkm-small-heading {
   font-family: "Goudy Old Style", serif;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #105781;
   margin-bottom: 1rem;
 }
@@ -2078,8 +2010,8 @@ footer ul {
 
 .expj-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   gap: 2rem;
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -2098,15 +2030,15 @@ footer ul {
 }
 
 .expjimage {
-  grid-column: 2;
-  grid-row: 1/ span 2;
+  grid-column: 1;
+  grid-row: auto;
   align-self: center;
 
 }
 
 .expj-content1 {
   grid-column: 1;
-  grid-row: 1 / span 1;
+  grid-row: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2114,12 +2046,12 @@ footer ul {
 }
 
 .expj-p1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .expj-content2 {
-  grid-column: 3;
-  grid-row: 1 / span 1;
+  grid-column: 1;
+  grid-row: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2127,7 +2059,7 @@ footer ul {
 }
 
 .expj-p2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .expj-content h2 {
@@ -2138,7 +2070,7 @@ footer ul {
 .experience-heading {
   font-family: "Goudy Old Style", serif;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #105781;
   margin-bottom: 1rem;
 }
@@ -2146,12 +2078,15 @@ footer ul {
 .journey-heading {
   font-family: "Goudy Old Style", serif;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #105781;
   margin-bottom: 1rem;
 }
 
-/*ABOUT SECTION FACTS*/
+}
+
+
+/*ABOUT SECTION FACTS DESKTOP*/
 .facts-section {
   display: flex;
   justify-content: space-between;
@@ -2236,7 +2171,7 @@ p {
 
 .faqtitles {
   font-family: "Goudy Old Style", serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #105781;
 }
@@ -2250,7 +2185,7 @@ p {
 .faq-question {
   width: 100%;
   text-align: left;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Goudy Old Style", serif;
   color: #105781;
   padding: 0.75rem;
@@ -2271,7 +2206,7 @@ p {
 }
 
 .faq-answer p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .faq-answer a {
@@ -2306,7 +2241,7 @@ p {
 
 
 /*DESKTOP VIEW*/
-@media screen and (min-width: 1161px) {
+@media screen and (min-width: 1280px) {
 
   .navpanel {
    display: none;
@@ -2496,6 +2431,231 @@ display: grid;
   text-decoration: none;
   list-style: none;
 }
+
+/*ABOUT PAGE*/
+
+.gtkm-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.gtkmimage img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.gtkmimage1 {
+  grid-column: 1;
+  grid-row: 1/ span 2;
+  max-width: 100%;
+}
+
+.gtkmimage2 {
+  grid-column: 3;
+  grid-row: 2/ span 2;
+  align-self: center;
+
+}
+
+.gtkm-content {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gtkm-p {
+  font-size: 2rem;
+}
+
+.gtkm-content h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.gtkm-small-heading {
+  font-family: "Goudy Old Style", serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #105781;
+  margin-bottom: 1rem;
+}
+
+.ultimate-goal h3 {
+  background-color:#d1f3fd;
+}
+
+.expj-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.expjimage img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.expjimage {
+  grid-column: 2;
+  grid-row: 1/ span 2;
+  align-self: center;
+
+}
+
+.expj-content1 {
+  grid-column: 1;
+  grid-row: 1 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expj-p1 {
+  font-size: 2rem;
+}
+
+.expj-content2 {
+  grid-column: 3;
+  grid-row: 1 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expj-p2 {
+  font-size: 2rem;
+}
+
+.expj-content h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.experience-heading {
+  font-family: "Goudy Old Style", serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #105781;
+  margin-bottom: 1rem;
+}
+
+.journey-heading {
+  font-family: "Goudy Old Style", serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #105781;
+  margin-bottom: 1rem;
+}
+
+/*FAQ*/
+
+.faq-topic {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: .5rem;
+}
+
+.faq {
+  background-color: #d1f3fd;
+  border-radius: 30px;
+  padding: 10%;
+  margin: 15%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-align: center;
+  }
+
+.faqtitles {
+  font-family: "Goudy Old Style", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #105781;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #105781;
+  
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+  font-family: "Goudy Old Style", serif;
+  color: #105781;
+  padding: 0.75rem;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+}
+
+.faq-answer {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+.faq-answer p {
+  font-size: 1.5rem;
+}
+
+.faq-answer a {
+  color:#105781;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.faq-answer a:hover {
+  color:#d1f3fd;
+  font-weight: bold;
+}
+
+.faq-item.active {
+   border-radius: 10px;
+    color: #105781;
+}
+
+.faq-item.active .faq-answer {
+  /* REMOVE: max-height */
+  /* Only padding if you want spacing when shown */
+  padding: 0.5rem 0;
+ 
+}
+
+
+
 
 /*FOOTER*/
 footer {
