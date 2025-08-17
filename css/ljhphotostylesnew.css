@@ -1096,9 +1096,9 @@ footer ul li a:hover {
   .navpanel a {
     color:#105781;
     display: block;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
-    padding: 20px 8px 8px 32px;
+    padding: 100px 8px 8px 32px;
     text-decoration: none;
     transition: 0.3s;
   }
@@ -1472,9 +1472,9 @@ footer ul {
     .navpanel a {
       color:#105781;
       display: block;
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: bold;
-      padding: 5px 8px 8px 32px;
+      padding: 100px 8px 8px 32px;
       text-decoration: none;
       transition: 0.3s;
   }
@@ -1526,7 +1526,8 @@ footer ul {
 }
 
 /*GALLERY*/
-.gallery-row {
+
+  .gallery-row {
   display: flex;
   flex-wrap: wrap;
   margin: 5%; 
@@ -1535,11 +1536,10 @@ footer ul {
   border-radius: 10px;
   }
 
-  .gallery-column {
-    flex: 45%;
-    max-width: 50%;
-  } 
-
+.gallery-column {
+  flex:100%;
+  max-width: 100%;
+}
 
 
 /*Testimonials*/
@@ -1567,6 +1567,17 @@ footer ul {
   line-height: 1.6;
   color: #105781;
   font-size: 2.5rem;
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Adjust as needed */
+  width: 100%;
 }
 
 .stars {
